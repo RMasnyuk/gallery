@@ -7,7 +7,7 @@ thumbs.onclick = function (event) {
     if (target.nodeName === 'DIV') {
         return;
     } else if (target.nodeName === 'IMG') {
-        bigImage.alt = target.parentNode.title;
+        bigImage.alt = target.parentElement.title;
         bigImage.src = target.parentElement.href;
         return;
     }
